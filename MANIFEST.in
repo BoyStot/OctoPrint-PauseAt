@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_PauseAt/templates *
+recursive-include octoprint_PauseAt/translations *
+recursive-include octoprint_PauseAt/static *
