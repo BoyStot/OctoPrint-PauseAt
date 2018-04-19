@@ -1,0 +1,41 @@
+<div id="sidebar_plugin_pauseat" >
+
+
+    <label class="checkbox">
+        <input type="checkbox" data-bind="enable: loginState.isUser(), checked: automaticShutdownEnabled">
+        Pause at:
+        <div class="input-append">
+            <input type="number" min="1" step="1" class="input-mini" data-bind="">
+            <span class="input-group-btn">
+                <select class="btn input-medium text-left">
+                  <option>--please select--</option>
+                  <option>layer</option>
+                  <option>mm</option>
+                  <option>on click</option>
+                </select>
+            </span>
+
+        </div>
+    </label>
+	<label>
+		Pause Script:
+	</label>
+	<div class="controls">
+		<select>
+			<option>--please select--</option>
+			<option>Fillament change</option>
+			<option>Insert Nut</option>
+		</select>
+	</div>
+	<label class="">
+		Resume Script:
+	</label>
+	<div class="controls">
+		<select>
+			<option>--please select--</option>
+			<option>Fillament change</option>
+			<option>Insert Nut</option>
+		</select>
+	</div>
+
+</div>

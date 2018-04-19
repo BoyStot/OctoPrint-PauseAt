@@ -1,0 +1,55 @@
+<form class="form-horizontal">
+
+    <h4>Pause Scripts</h4>
+    <div class="accordion-inner">
+        <p>
+            You can define several scripts for pausing your printer.
+        </p>
+        <p>
+            The selected script is send to the printer if the "pause at-condition" is true.
+        </p>
+
+        <div class="row-fluid">
+            <div class="span4">
+                <div class="control-group">
+                    <a title="Add Script" class="btn btn-primary" data-bind="click: addTerminalFilter"><i class="fa fa-plus"></i></a>
+                    <a title="Remove Script" class="btn btn-danger" data-bind="click: $parent.removeTerminalFilter"><i class="fa fa-trash-o"></i></a>
+                </div>
+
+
+                <div class="span3 scrollable" id="settings_dialog_menu">
+                    <ul class="nav nav-list" id="settingsTabs">
+                        <li class="nav-header">Filament change</li>
+                        <li id="settings_serialConnection_link" class="">
+                            <a href="#settings_serialConnection" data-toggle="tab">Insert nuts</a>
+                        </li>
+                        <li id="settings_printerProfiles_link" class="">
+                            <a href="#settings_printerProfiles" data-toggle="tab">Wait and check</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span6">
+                <div class="control-group">
+                    <label class="control-label">Script Name</label>
+                    <div class="controls">
+                        <textarea rows="4" class="block" data-bind="value: scripts_gcode_beforePrintStarted"></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <h4>Resume Scripts</h4>
+    <div class="accordion-inner">
+        <div class="control-group">
+            <label class="control-label">Add trailing character&nbsp;&nbsp;&nbsp;<input type="checkbox"
+                                                                      data-bind="checked: settings.plugins.DisplayLayerProgress.addTrailingChar"></label>
+        </div>
+        <p>
+            Use this if your printer display cuts off the last character of the layer message.
+        </p>
+    </div>
+
+</form>

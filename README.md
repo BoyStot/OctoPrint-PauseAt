@@ -1,6 +1,11 @@
 # OctoPrint-PauseAt
 
-**TODO:** Describe what your plugin does.
+** WORK IN PROGRESS **
+
+Plugin that pause the print at a specific layer or hight, executes a defined G-Code script, wait for user resume-action and execute a resume G-Code script.
+
+![Sidebar](screenshots/sidebar.jpg)
+
 
 ## Setup
 
@@ -15,3 +20,8 @@ the plugin manager.
 ## Configuration
 
 **TODO:** Describe your plugin's configuration options (if any).
+
+
+schmierzettel
+M400 -> pause print
+M110 N0 -> resume print
