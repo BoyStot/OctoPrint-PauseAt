@@ -1,6 +1,8 @@
 # OctoPrint-PauseAt
 
 ** WORK IN PROGRESS **
+see https://community.octoprint.org/t/pause-at-layer-end/1412/30
+
 
 Plugin that pause the print at a specific layer or hight, executes a defined G-Code script, wait for user resume-action and execute a resume G-Code script.
 
